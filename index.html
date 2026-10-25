@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ali Rashed — Multimedia Designer</title>
-  <meta name="description" content="Portfolio of Ali Rashed — Multimedia Designer specializing in UI/UX, Graphic Design, Motion, and AI Visuals. Based in Dubai." />
+  <title>AMMARA RAFEEQUE — Multimedia Designer</title>
+  <meta name="description"
+    content="Portfolio of Ammara Rafeeque — Multimedia Designer specializing in UI/UX, Graphic Design, Motion, and AI Visuals. Based in Dubai." />
 
-  <!-- Fonts -->
+  <!-- Preconnect to Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
 
+  <!-- Preload Critical Above-The-Fold LCP Image -->
+  <link rel="preload" as="image" href="assets/images/hero/hero-portrait.webp" type="image/webp" />
+
+  <!-- Design System Stylesheet -->
   <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
 
   <!-- ============================
        HERO
        ============================ -->
-  <section class="hero" id="hero">
+  <header class="hero" id="hero">
 
     <!-- Meta bar -->
     <div class="hero__meta-bar">
@@ -36,22 +42,19 @@
 
       <!-- Title -->
       <h1 class="hero__title">
-        Multimedia<br />Designer
+        <span class="hero__title-line" style="display: block;">Multimedia</span>
+        <span class="hero__title-line" style="display: block;">Designer</span>
       </h1>
 
       <!-- Portrait -->
       <div class="hero__portrait-wrap">
-        <img
-          class="hero__portrait"
-          src="portrait.jpg"
-          alt="Portrait of Ali Rashed, Multimedia Designer"
-          width="800"
-          height="1067"
-        />
+        <div class="hero__cobalt-field" aria-hidden="true"></div>
+        <img class="hero__portrait" src="assets/images/hero/hero-portrait.webp"
+          alt="Portrait of Ammara Rafeeque, Multimedia Designer" width="1084" height="1451" fetchpriority="high" />
       </div>
 
       <!-- Designer name -->
-      <p class="hero__name">Ali Rashed</p>
+      <p class="hero__name">AMMARA RAFEEQUE</p>
 
       <!-- Bottom section -->
       <div class="hero__bottom">
@@ -70,7 +73,7 @@
             View Selected Work
             <span class="hero__cta-arrow">→</span>
           </a>
-          <a href="#" class="hero__cta-secondary" id="cta-download-cv">
+          <a href="#about" class="hero__cta-secondary" id="cta-download-cv">
             Download CV
             <span class="hero__cta-arrow">↓</span>
           </a>
@@ -80,7 +83,634 @@
 
     </div>
 
-  </section>
+  </header>
+
+  <main>
+    <!-- ============================
+         SELECTED WORK — INTRO
+         ============================ -->
+    <section class="work-intro" id="work" aria-label="Selected Work Intro">
+
+      <!-- Meta bar -->
+      <div class="work-intro__meta-bar">
+        <span class="work-intro__index">01 / Selected Work</span>
+      </div>
+
+      <hr class="work-intro__rule" />
+
+      <!-- Content -->
+      <div class="work-intro__content">
+
+        <!-- Main heading -->
+        <h2 class="work-intro__title">
+          <span class="work-intro__title-line" style="display: block;">Things</span>
+          <span class="work-intro__title-line" style="display: block;">I've</span>
+          <span class="work-intro__title-line" style="display: block;">Made.</span>
+        </h2>
+
+        <!-- Aside metadata -->
+        <aside class="work-intro__aside">
+          <span class="work-intro__year">2024—2026</span>
+          <ul class="work-intro__categories">
+            <li class="work-intro__category">Graphic</li>
+            <li class="work-intro__category">UI/UX</li>
+            <li class="work-intro__category">Motion</li>
+            <li class="work-intro__category">AI Visuals</li>
+          </ul>
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============================
+         PROJECT 01 — GRAPHIC DESIGN
+         ============================ -->
+    <section class="project" id="project-01" aria-label="Project 01: Modernist Dialogues">
+
+      <!-- Meta bar -->
+      <div class="project__meta-bar">
+        <span class="project__index">01 / Graphic Design</span>
+      </div>
+
+      <hr class="project__rule" />
+
+      <!-- Canvas -->
+      <div class="project__canvas">
+
+        <!-- Sticky Stage -->
+        <div class="project__sticky-stage">
+          <!-- Text -->
+          <div class="project__text">
+            <div class="project__title-parallax">
+              <h2 class="project__title">Modernist<br />Dialogues</h2>
+            </div>
+            <div class="project__desc-parallax">
+              <p class="project__desc">Visual identity and campaign design for a contemporary architecture and design
+                forum, exploring geometric composition, bold typography and modernist visual language.</p>
+            </div>
+          </div>
+
+          <!-- Primary artwork -->
+          <div class="project__artwork project__artwork--primary">
+            <img src="assets/images/graphic-design/graphic-modernist-primary.webp"
+              alt="Campaign primary artwork — bold geometric poster composition" width="896" height="1200"
+              loading="lazy" decoding="async" />
+          </div>
+        </div>
+
+        <!-- Secondary artwork -->
+        <div class="project__artwork project__artwork--secondary">
+          <img src="assets/images/graphic-design/graphic-modernist-secondary.webp"
+            alt="Campaign secondary artwork — social media card design" width="1200" height="896" loading="lazy"
+            decoding="async" />
+        </div>
+
+        <!-- Detail artwork -->
+        <div class="project__artwork project__artwork--detail">
+          <img src="assets/images/graphic-design/graphic-modernist-detail-01.webp"
+            alt="Campaign detail — close-up typographic texture" width="1024" height="1024" loading="lazy"
+            decoding="async" />
+        </div>
+
+        <!-- Info -->
+        <div class="project__info">
+          <div class="project__info-item">
+            <span class="project__info-label">Role</span>
+            <span class="project__info-value">Graphic Design / Art Direction</span>
+          </div>
+          <div class="project__info-item">
+            <span class="project__info-label">Deliverables</span>
+            <span class="project__info-value">Campaign / Social Visuals</span>
+          </div>
+          <div class="project__info-item">
+            <span class="project__info-label">Tools</span>
+            <span class="project__info-value">Canva / Photoshop</span>
+          </div>
+          <div class="project__info-item">
+            <span class="project__info-label">Year</span>
+            <span class="project__info-value">2026</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ============================
+         PROJECT 02 — UI UX
+         ============================ -->
+    <section class="project project--ux" id="project-02" aria-label="Project 02: A Better Mobile Experience">
+
+      <!-- Meta bar -->
+      <div class="project__meta-bar">
+        <span class="project__index">02 / UI UX</span>
+      </div>
+
+      <hr class="project__rule" />
+
+      <!-- Header: title + primary screen -->
+      <div class="project-ux__header">
+        <div class="project-ux__text">
+          <div class="project__title-parallax">
+            <h2 class="project__title">A Better<br />Mobile<br />Experience.</h2>
+          </div>
+          <div class="project__desc-parallax">
+            <p class="project__desc">Rethinking the daily banking interaction through progressive simplification and
+              considered visual hierarchy.</p>
+          </div>
+        </div>
+        <div class="project-ux__primary">
+          <img src="assets/images/ui-ux/ui-banking-primary.webp" alt="Final mobile banking interface — home dashboard"
+            width="768" height="1376" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <!-- Process strip -->
+      <div class="project-ux__process">
+        <div class="project-ux__process-accent" aria-hidden="true"></div>
+        <div class="project-ux__process-img">
+          <img src="assets/images/ui-ux/ui-banking-process.webp"
+            alt="Design process — wireframe to mid-fidelity to final UI" width="1376" height="768" loading="lazy"
+            decoding="async" />
+        </div>
+      </div>
+
+      <!-- Narrative: Problem / Approach / Outcome -->
+      <div class="project-ux__narrative">
+        <div class="project-ux__narrative-item">
+          <span class="project-ux__narrative-label">01 / Problem</span>
+          <p class="project-ux__narrative-text">Existing interfaces overwhelmed users with competing actions and
+            inconsistent navigation patterns.</p>
+        </div>
+        <div class="project-ux__narrative-item">
+          <span class="project-ux__narrative-label">02 / Approach</span>
+          <p class="project-ux__narrative-text">Restructured information architecture around three core user journeys,
+            validating each flow through iterative wireframing.</p>
+        </div>
+        <div class="project-ux__narrative-item">
+          <span class="project-ux__narrative-label">03 / Outcome</span>
+          <p class="project-ux__narrative-text">A streamlined interface that reduces cognitive load while surfacing the
+            most important actions contextually.</p>
+        </div>
+      </div>
+
+      <!-- Supporting screens + detail -->
+      <div class="project-ux__screens">
+        <div class="project-ux__screen project-ux__screen--a">
+          <img src="assets/images/ui-ux/ui-transfer-screen.webp" alt="Transfer money flow screen" width="768"
+            height="1376" loading="lazy" decoding="async" />
+        </div>
+        <div class="project-ux__screen project-ux__screen--b">
+          <img src="assets/images/ui-ux/ui-analytics-screen.webp" alt="Spending analytics screen" width="768"
+            height="1376" loading="lazy" decoding="async" />
+        </div>
+        <div class="project-ux__screen project-ux__screen--detail">
+          <img src="assets/images/ui-ux/ui-banking-detail.webp" alt="Design system component specimen" width="1024"
+            height="1024" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- Editorial margin note -->
+        <div class="project-ux__margin-note">
+          <span class="project-ux__note-text">TYPE / MANROPE</span>
+          <span class="project-ux__note-text">PRIMARY / #0057B8</span>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="project__info project__info--three">
+        <div class="project__info-item">
+          <span class="project__info-label">Role</span>
+          <span class="project__info-value">UI/UX Design</span>
+        </div>
+        <div class="project__info-item">
+          <span class="project__info-label">Tools</span>
+          <span class="project__info-value">Figma</span>
+        </div>
+        <div class="project__info-item">
+          <span class="project__info-label">Year</span>
+          <span class="project__info-value">2026</span>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ============================
+         PROJECT 03 — MOTION + VIDEO
+         ============================ -->
+    <section class="project project--motion" id="project-03" aria-label="Project 03: Stories in Motion">
+
+      <!-- Meta bar -->
+      <div class="project__meta-bar">
+        <span class="project__index project__index--motion">03 / Motion + Video</span>
+      </div>
+
+      <hr class="project__rule project__rule--motion" />
+
+      <!-- Canvas -->
+      <div class="project-motion__canvas">
+
+        <!-- Text / Metadata -->
+        <div class="project-motion__header">
+          <span class="project-motion__duration">00:47 — Selected Reel</span>
+          <h2 class="project-motion__title">
+            <span class="project-motion__title-mask"><span class="project-motion__title-line">Stories</span></span>
+            <span class="project-motion__title-mask"><span class="project-motion__title-line">In</span></span>
+            <span class="project-motion__title-mask"><span class="project-motion__title-line">Motion.</span></span>
+          </h2>
+          <div class="project-motion__disciplines">
+            <span>Editing</span>
+            <span>Motion</span>
+            <span>Social Video</span>
+            <span>AI Video</span>
+          </div>
+        </div>
+
+        <!-- Primary Video Trigger -->
+        <div class="project-motion__primary">
+          <button type="button" class="project-motion__video-trigger" data-video-id="ld42zS98bxs"
+            aria-label="Play Stories in Motion reel">
+            <span class="project-motion__primary-mask">
+              <span class="project-motion__video-scale">
+                <img src="assets/images/motion/project-03-primary.webp"
+                  alt="Primary cinematic motion reel poster frame" width="1376" height="768" loading="lazy"
+                  decoding="async" />
+              </span>
+              <span class="project-motion__play-indicator" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" focusable="false">
+                  <polygon points="7,4 20,12 7,20" />
+                </svg>
+              </span>
+            </span>
+          </button>
+          <div class="project-motion__play-wrap">
+            <a href="#" class="project-motion__play" data-video-id="ld42zS98bxs">Play Reel ↗</a>
+          </div>
+        </div>
+
+        <!-- Supporting frames -->
+        <div class="project-motion__support project-motion__support--vertical">
+          <img src="assets/images/motion/motion-stories-social.webp" alt="Vertical social video frame" width="768"
+            height="1376" loading="lazy" decoding="async" />
+        </div>
+
+        <div class="project-motion__support project-motion__support--wide">
+          <button type="button" class="project-motion__video-trigger" data-video-id="5Ihu8C6zuYk"
+            aria-label="Play The Last Room video">
+            <span class="project-motion__wide-mask">
+              <span class="project-motion__video-scale">
+                <img src="assets/images/motion/project-03-wide.webp" alt="Wide atmospheric support frame" width="1376"
+                  height="768" loading="lazy" decoding="async" />
+              </span>
+              <span class="project-motion__play-indicator" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" focusable="false">
+                  <polygon points="7,4 20,12 7,20" />
+                </svg>
+              </span>
+            </span>
+          </button>
+        </div>
+
+        <div class="project-motion__support project-motion__support--detail">
+          <img src="assets/images/motion/motion-stories-detail.webp" alt="Macro detail texture frame" width="1024"
+            height="1024" loading="lazy" decoding="async" />
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ============================
+         PROJECT 04 — AI VISUALS
+         ============================ -->
+    <section class="project project--ai" id="project-04" aria-label="Project 04: Imagined. Directed. Made.">
+
+      <!-- Meta bar -->
+      <div class="project__meta-bar">
+        <span class="project__index">04 / AI Visuals</span>
+      </div>
+
+      <hr class="project__rule" />
+
+      <!-- Canvas -->
+      <div class="project-ai__canvas">
+
+        <!-- Text / Workflow -->
+        <div class="project-ai__header">
+          <h2 class="project__title">
+            <span class="project-ai__title-mask"><span class="project-ai__title-line">Imagined.</span></span>
+            <span class="project-ai__title-mask"><span class="project-ai__title-line">Directed.</span></span>
+            <span class="project-ai__title-mask"><span class="project-ai__title-line">Made.</span></span>
+          </h2>
+
+          <div class="project-ai__workflow">
+            <span>01 / Concept</span>
+            <span class="project-ai__workflow-arrow">→</span>
+            <span>02 / Generation</span>
+            <span class="project-ai__workflow-arrow">→</span>
+            <span>03 / Selection</span>
+            <span class="project-ai__workflow-arrow">→</span>
+            <span>04 / Compositing</span>
+            <span class="project-ai__workflow-arrow">→</span>
+            <span>05 / Motion</span>
+          </div>
+        </div>
+
+        <!-- Vermilion Accent Field -->
+        <div class="project-ai__accent" aria-hidden="true"></div>
+
+        <!-- Collage Layout -->
+
+        <!-- 1. Large Final AI Image -->
+        <div class="project-ai__item project-ai__item--primary">
+          <div class="project-ai__primary-mask">
+            <img src="assets/images/ai-visuals/ai-fashion-primary.webp" alt="Large final AI generated portrait"
+              width="1122" height="1402" loading="lazy" decoding="async" />
+          </div>
+        </div>
+
+        <!-- 2. Alternative Variation -->
+        <div class="project-ai__item project-ai__item--variation">
+          <img src="assets/images/ai-visuals/ai-fashion-detail-01.webp" alt="Alternative variation of AI portrait"
+            width="1122" height="1402" loading="lazy" decoding="async" />
+        </div>
+
+        <!-- 3. AI Video Frame (Unified Video Trigger) -->
+        <div class="project-ai__item project-ai__item--video">
+          <button type="button" class="project-motion__video-trigger" data-video-id="tVHx9i-IyuI"
+            aria-label="Play NUR — AI Fashion Study video">
+            <span class="project-motion__wide-mask">
+              <span class="project-motion__video-scale">
+                <img src="assets/images/ai-visuals/ai-video-frame.webp" alt="NUR — AI Fashion Study video frame"
+                  width="1672" height="941" loading="lazy" decoding="async" />
+              </span>
+              <span class="project-motion__play-indicator" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" focusable="false">
+                  <polygon points="7,4 20,12 7,20" />
+                </svg>
+              </span>
+            </span>
+          </button>
+        </div>
+
+        <!-- 4. Small Source/Process Fragment -->
+        <div class="project-ai__item project-ai__item--fragment">
+          <img src="assets/images/ai-visuals/ai-fashion-process.webp" alt="Process fragment and source material"
+            width="1122" height="1402" loading="lazy" decoding="async" />
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ============================
+         MORE WORK (ARCHIVE)
+         ============================ -->
+    <section class="more-work" id="more-work" aria-label="Archive: A Few More Things">
+
+      <div class="project__meta-bar">
+        <span class="project__index">05 / More Work</span>
+      </div>
+
+      <hr class="project__rule" />
+
+      <div class="more-work__header">
+        <h2 class="more-work__title">A Few More<br />Things.</h2>
+      </div>
+
+      <div class="more-work__canvas">
+
+        <!-- Index List -->
+        <ul class="more-work__index">
+          <hr class="more-work__rule" />
+          <li class="more-work__row is-active" tabindex="0" data-index="0" role="button" aria-pressed="true">
+            <span class="more-work__num">01</span>
+            <span class="more-work__name">Social Campaign</span>
+            <span class="more-work__discipline">Graphic</span>
+            <span class="more-work__year">2026</span>
+            <span class="more-work__arrow">↗</span>
+          </li>
+          <hr class="more-work__rule" />
+          <li class="more-work__row" tabindex="0" data-index="1" role="button" aria-pressed="false">
+            <span class="more-work__num">02</span>
+            <span class="more-work__name">Mobile Concept</span>
+            <span class="more-work__discipline">UI UX</span>
+            <span class="more-work__year">2026</span>
+            <span class="more-work__arrow">↗</span>
+          </li>
+          <hr class="more-work__rule" />
+          <li class="more-work__row" tabindex="0" data-index="2" role="button" aria-pressed="false">
+            <span class="more-work__num">03</span>
+            <span class="more-work__name">Brand System</span>
+            <span class="more-work__discipline">Branding</span>
+            <span class="more-work__year">2025</span>
+            <span class="more-work__arrow">↗</span>
+          </li>
+          <hr class="more-work__rule" />
+          <li class="more-work__row" tabindex="0" data-index="3" role="button" aria-pressed="false">
+            <span class="more-work__num">04</span>
+            <span class="more-work__name">AI Fashion Study</span>
+            <span class="more-work__discipline">AI Visuals</span>
+            <span class="more-work__year">2026</span>
+            <span class="more-work__arrow">↗</span>
+          </li>
+          <hr class="more-work__rule" />
+          <li class="more-work__row" tabindex="0" data-index="4" role="button" aria-pressed="false">
+            <span class="more-work__num">05</span>
+            <span class="more-work__name">Short Promo Film</span>
+            <span class="more-work__discipline">Motion</span>
+            <span class="more-work__year">2026</span>
+            <span class="more-work__arrow">↗</span>
+          </li>
+          <hr class="more-work__rule" />
+          <li class="more-work__row" tabindex="0" data-index="5" role="button" aria-pressed="false">
+            <span class="more-work__num">06</span>
+            <span class="more-work__name">Social Series</span>
+            <span class="more-work__discipline">Content</span>
+            <span class="more-work__year">2025</span>
+            <span class="more-work__arrow">↗</span>
+          </li>
+          <hr class="more-work__rule" />
+        </ul>
+
+        <!-- Preview Image -->
+        <div class="more-work__preview" aria-hidden="true">
+          <div class="more-work__preview-frame">
+            <div class="more-work__preview-inner">
+              <img src="assets/images/project-index/index-social-campaign.webp"
+                alt="Social Campaign — Graphic (2026)" width="1669" height="942"
+                style="object-position: 48% center;" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ============================
+         CAPABILITIES
+         ============================ -->
+    <section class="capabilities" id="capabilities" aria-label="Capabilities">
+
+      <div class="project__meta-bar">
+        <span class="project__index">06 / Capabilities</span>
+      </div>
+
+      <hr class="project__rule" />
+
+      <div class="capabilities__canvas">
+
+        <div class="capabilities__header">
+          <h2 class="capabilities__title">What I<br />Work<br />Across.</h2>
+        </div>
+
+        <div class="capabilities__list">
+
+          <hr class="capabilities__rule" />
+          <div class="capabilities__row">
+            <h3 class="capabilities__name"><span class="capabilities__num">01 /</span> Graphic Design</h3>
+            <p class="capabilities__skills">Brand identities / Campaign visuals / Social content / Digital design</p>
+          </div>
+
+          <hr class="capabilities__rule" />
+          <div class="capabilities__row">
+            <h3 class="capabilities__name"><span class="capabilities__num">02 /</span> UI UX</h3>
+            <p class="capabilities__skills">Wireframes / Interface design / Prototyping / Figma workflows</p>
+          </div>
+
+          <hr class="capabilities__rule" />
+          <div class="capabilities__row">
+            <h3 class="capabilities__name"><span class="capabilities__num">03 /</span> Motion + Video</h3>
+            <p class="capabilities__skills">Video editing / Short-form content / Motion graphics / Social video</p>
+          </div>
+
+          <hr class="capabilities__rule" />
+          <div class="capabilities__row">
+            <h3 class="capabilities__name"><span class="capabilities__num">04 /</span> AI Visuals</h3>
+            <p class="capabilities__skills">AI image generation / AI video / Creative compositing / Visual direction</p>
+          </div>
+          <hr class="capabilities__rule" />
+
+          <!-- Tools -->
+          <div class="capabilities__tools">
+            <span class="capabilities__tools-label">Tools I Use</span>
+            <span class="capabilities__tools-list">Figma / Canva / Adobe Creative Cloud / AI Tools</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ============================
+         ABOUT
+         ============================ -->
+    <section class="about" id="about" aria-label="About Ammara Rafeeque">
+
+      <div class="project__meta-bar">
+        <span class="project__index">07 / About</span>
+      </div>
+
+      <hr class="project__rule" />
+
+      <div class="about__canvas">
+
+        <!-- Text Area -->
+        <div class="about__text">
+          <h2 class="about__title">I Design<br />With<br />Curiosity.</h2>
+
+          <p class="about__bio">I am a multimedia designer based in Dubai, focused on the intersection of graphic design,
+            UI/UX, and motion. I build brand systems, design functional digital products, and direct cinematic video
+            content. By integrating AI-assisted creative workflows, I aim to expand visual possibilities while keeping
+            human intent at the core of every project.</p>
+
+          <a href="#" class="about__cv">Download CV ↗</a>
+        </div>
+
+        <!-- Portrait -->
+        <div class="about__portrait">
+          <img src="assets/images/about/about-portrait.webp" alt="Editorial portrait of Ammara Rafeeque" width="896"
+            height="1200" loading="lazy" decoding="async" />
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ============================
+       CONTACT
+       ============================ -->
+  <footer class="contact" id="contact" aria-label="Contact">
+
+    <div class="contact__bg-line" aria-hidden="true"></div>
+
+    <div class="project__meta-bar">
+      <span class="project__index">08 / Contact</span>
+      <span class="contact__availability">Available for select projects</span>
+    </div>
+
+    <hr class="project__rule" />
+
+    <div class="contact__canvas">
+
+      <!-- Massive Heading -->
+      <h2 class="contact__title">
+        <span class="contact__title-line">Let's</span>
+        <span class="contact__title-line">Make</span>
+        <span class="contact__title-line">Something</span>
+        <span class="contact__title-line">Great.</span>
+      </h2>
+
+      <!-- Footer Info -->
+      <div class="contact__info">
+        <p class="contact__desc">Have a project in mind?<br />Let's talk.</p>
+
+        <div class="contact__actions">
+          <a href="mailto:ali.rashed@live.com" class="contact__link contact__link--primary" id="contact-email-link"
+            aria-label="Email ali.rashed@live.com">Email Me ↗</a>
+
+          <div class="contact__socials">
+            <a href="tel:+971508373279" class="contact__link">Call ↗</a>
+            <a href="https://wa.me/971508373279" target="_blank" rel="noopener noreferrer"
+              class="contact__link">WhatsApp ↗</a>
+          </div>
+        </div>
+
+        <div class="contact__meta">
+          <span>Dubai / UAE</span>
+          <span>2026</span>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- ============================
+       REUSABLE UNIFIED VIDEO MODAL
+       ============================ -->
+  <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Video player"
+    aria-hidden="true">
+    <div class="video-modal__backdrop" data-modal-close></div>
+    <button type="button" class="video-modal__close" aria-label="Close video" data-modal-close>
+      <span class="video-modal__close-icon" aria-hidden="true">×</span>
+    </button>
+    <div class="video-modal__player-wrap">
+      <div class="video-modal__player" id="video-modal-player"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script type="module" src="src/main.js"></script>
 
 </body>
+
 </html>

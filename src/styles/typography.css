@@ -1,0 +1,99 @@
+/* ===================================================
+   TYPOGRAPHY SYSTEM
+   Fluid responsive typography using clamp()
+   Preserving League Gothic's dramatic scale and Manrope's crisp readability
+   =================================================== */
+
+/* Display Typography — League Gothic */
+.type-hero-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(68px, 14vw, 240px);
+  line-height: 0.88;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.type-section-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(48px, 9.5vw, 130px);
+  line-height: 0.92;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.type-project-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(38px, 6vw, 92px);
+  line-height: 0.94;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.type-massive-contact {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(56px, 11vw, 180px);
+  line-height: 0.88;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+/* Body & Editorial Typography — Manrope */
+.type-body {
+  font-family: var(--font-body);
+  font-size: clamp(14px, 1.1vw, 17px);
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--ink);
+  opacity: 0.85;
+}
+
+.type-lead {
+  font-family: var(--font-body);
+  font-size: clamp(16px, 1.35vw, 20px);
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* Metadata, Labels & Navigation */
+.type-meta {
+  font-family: var(--font-body);
+  font-size: clamp(11px, 0.85vw, 13px);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.55;
+}
+
+.type-meta-accent {
+  font-family: var(--font-body);
+  font-size: clamp(11px, 0.85vw, 13px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--cobalt);
+}
+
+.type-micro {
+  font-family: var(--font-body);
+  font-size: clamp(10px, 0.75vw, 11px);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.type-action {
+  font-family: var(--font-body);
+  font-size: clamp(13px, 1vw, 15px);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}

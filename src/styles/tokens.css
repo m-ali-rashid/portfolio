@@ -1,0 +1,42 @@
+/* ===================================================
+   DESIGN TOKENS
+   Editorial / Swiss-inspired multimedia portfolio
+   =================================================== */
+
+:root {
+  /* Palette */
+  --paper:     #F3EFE7;
+  --ink:       #141414;
+  --cobalt:    #2F5BEA;
+  --vermilion: #F04A35;
+  --butter:    #F5D94E;
+
+  /* Typography families */
+  --font-display: 'League Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body:    'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Fluid Spacing Scale */
+  --page-margin: clamp(20px, 4vw, 64px);
+  --gutter: clamp(16px, 3vw, 48px);
+  --section-gap: clamp(80px, 14vh, 180px);
+  --section-pad-y: clamp(48px, 8vh, 100px);
+
+  /* Borders & Rules */
+  --rule-opacity: 0.15;
+  --rule-color: rgba(20, 20, 20, var(--rule-opacity));
+
+  /* Transitions */
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-smooth: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 0.25s;
+  --duration-normal: 0.4s;
+  --duration-slow: 0.7s;
+
+  /* Z-Index Hierarchy */
+  --z-base: 1;
+  --z-artwork: 2;
+  --z-overlay: 10;
+  --z-sticky: 100;
+  --z-modal-backdrop: 1000;
+  --z-modal: 1001;
+}
